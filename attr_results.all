@@ -1,0 +1,140 @@
+results_conceptnet-glove
+Method	\lambda	\alpha	F1-score
+mean	0.1	None	0.46851940437917583
+fuzzy	0.1	1.0	0.4646108293011506
+fuzzy	0.1	0.0	0.4578321888125875
+results_conceptnet_H300
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.5855639123817388
+cone	--0.4	-None	0.581080840268339
+arcone	--0.7	-None	0.5551250096845002
+results_def2tfidf_H400_tf-binary_st-False
+Method	\lambda	\alpha	F1-score
+sum	0.1	None	0.5036189566463323
+cone	0.0	None	0.4901126345328164
+arcone	0.0	None	0.4901126345328164
+results_def2tfidf_H400_tf-binary_st-True
+Method	\lambda	\alpha	F1-score
+fuzzy	0.0	1.0	0.4914730887589676
+sum	0.0	None	0.49091889086465784
+mean	0.0	None	0.49091889086465784
+results_def2vec_tfidf
+Method	\lambda	\alpha	F1-score
+cone	0.0	None	0.506380874566
+arcone	0.0	None	0.492316591826
+arcone	0.1	None	0.481153902466
+results_dsm_BNC_H500_w2
+Method	\lambda	\alpha	F1-score
+arcone	-0.4	None	0.5722413009153944
+cone	-0.4	None	0.5648174338666634
+arcone	-0.7	None	0.5335539063838761
+results_fastText_wikiEn_Full_H1000
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.536950169573
+cone	--0.4	-None	0.509770943317
+cone	-0.0	-None	0.480625643343
+results_fastText_wikiEn_Full_H300
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.569298850707
+cone	--0.4	-None	0.561920467919
+arcone	--0.7	-None	0.52266090809
+results_fstx_wikiEn_H500
+Method	\lambda	\alpha	F1-score
+arcone	-0.4	None	0.5701457871387918
+cone	-0.4	None	0.5687035723012821
+arcone	-0.7	None	0.5302084757347916
+results_glove_840B.300d
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.622297925389921
+cone	--0.4	-None	0.6156706163120624
+arcone	--0.7	-None	0.560235046630671
+results_glove-conceptnet
+Method	\lambda	\alpha	F1-score
+sum	0.4	None	0.4579839623893386
+triang	0.7	None	0.4454407101060439
+sum	0.7	None	0.441206243584752
+results_glove_H500_w2
+Method	\lambda	\alpha	F1-score
+arcone	-0.0	-None	0.5103465108936374
+cone	-0.0	-None	0.510063399957017
+arcone	--0.4	-None	0.48571606393596023
+results_gove-w2igf-ol
+Method	\lambda	\alpha	F1-score
+sum	0.4	None	0.4579839623893386
+triang	0.7	None	0.4454407101060439
+sum	0.7	None	0.441206243584752
+results_w2dep_H300
+Method	\lambda	\alpha	F1-score
+arcone	--0.7	-None	0.541934122609
+cone	--0.7	-None	0.536730806895
+cone	--0.4	-None	0.530319583928
+results_w2igf-ol-glove
+Method	\lambda	\alpha	F1-score
+cone	0.0	None	0.4371347878739451
+arcone	0.0	None	0.4371347878739451
+cone	0.1	None	0.43489744171861366
+results_w2igf_wikiEn_sub3_H300_w10_ol
+Method	\lambda	\alpha	F1-score
+arcone	0.0	None	0.5564367191743618
+cone	0.0	None	0.5507385606734944
+arcone	0.1	None	0.5489752873617122
+results_w2igf_wikiEn_sub3_H300_w10_sum
+Method	\lambda	\alpha	F1-score
+arcone	-0.0	-None	0.542482932460536
+cone	-0.0	-None	0.5411368057056407
+cone	-0.1	-None	0.5182099770402839
+results_w2igf_wikiEn_sub3_H500_w10_ol
+Method	\lambda	\alpha	F1-score
+cone	-0.0	-None	0.5601885006178884
+arcone	-0.0	-None	0.5561197569005236
+arcone	-0.1	-None	0.5482836914423592
+results_w2igf_wikiEn_sub3_H500_w10_sum
+Method	\lambda	\alpha	F1-score
+arcone	-0.0	-None	0.5198114328938837
+cone	--1.0	-None	0.5164941128704832
+cone	-0.0	-None	0.5155921809826107
+results_w2igf_wikiEn_sub5_H500_w10_ol
+Method	\lambda	\alpha	F1-score
+triang	-0.7	-None	0.526892331877
+fuzzy	-1.0	-0.7	0.520100038313
+fuzzy	-0.7	-0.0	0.517525770952
+results_w2igf_wikiEn_sub5_H500_w10_sum
+Method	\lambda	\alpha	F1-score
+arcone	0.1	None	0.52400952766
+cone	0.0	None	0.522112734315
+cone	0.1	None	0.521089967003
+results_w2igf_wikifsub10_H300_w10_sum
+Method	\lambda	\alpha	F1-score
+cone	-0.1	-None	0.519152155159334
+cone	-0.0	-None	0.5164537108046395
+arcone	-0.1	-None	0.5164537108046395
+results_w2igf_wikifsub2_H300_w10_sum
+Method	\lambda	\alpha	F1-score
+cone	-0.0	-None	0.5445478234543606
+cone	-0.1	-None	0.5422658255883583
+arcone	-0.0	-None	0.5415265990953847
+results_w2v_freebase-vectors-skipgram1000
+Method	\lambda	\alpha	F1-score
+fuzzy	-1.0	-1.0	0.5304760624470579
+fuzzy	-0.1	-0.7	0.5205699373821995
+cone	--1.0	-None	0.5201992554105823
+results_w2v_pretrained-GoogleNews_H300
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.5708831035910561
+cone	--0.4	-None	0.570135575595637
+arcone	--0.7	-None	0.533789088305963
+results_w2v_WikiEn_H1000_cbow_W10
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.5456995189757012
+cone	--0.4	-None	0.5161846572535066
+arcone	-0.0	-None	0.4702472298704986
+results_w2v_WikiEn_H300_cbow_W10
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.584086156291
+cone	--0.4	-None	0.577374238359
+arcone	--0.7	-None	0.557757797568
+results_w2v_WikiEn_H500_cbow_W10
+Method	\lambda	\alpha	F1-score
+arcone	--0.4	-None	0.580161802245
+cone	--0.4	-None	0.570886890773
+arcone	--0.7	-None	0.506882543855

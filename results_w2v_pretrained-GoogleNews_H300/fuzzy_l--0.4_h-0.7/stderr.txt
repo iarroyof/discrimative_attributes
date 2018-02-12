@@ -1,0 +1,2 @@
+output from scoring function =0.35514826986083503
+correct:0.35514826986083503

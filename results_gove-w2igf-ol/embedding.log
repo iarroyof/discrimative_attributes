@@ -1,0 +1,16 @@
+DEBUG:root:Loading word vectors...
+DEBUG:gensim.models.doc2vec:Fast version of gensim.models.doc2vec is being used
+DEBUG:gensim.models.fasttext:Fast version of Fasttext is being used
+INFO:summa.preprocessing.cleaner:'pattern' package not found; tag filters are not available for English
+INFO:gensim.models.keyedvectors:loading projection weights from /home/iarroyof/data/glove/glove.840B.300d.bin
+DEBUG:smart_open.smart_open_lib:{'kw': {}, 'mode': 'rb', 'uri': '/home/iarroyof/data/glove/glove.840B.300d.bin'}
+DEBUG:smart_open.smart_open_lib:encoding_wrapper: {'mode': 'rb', 'errors': 'strict', 'fileobj': <_io.BufferedReader name='/home/iarroyof/data/glove/glove.840B.300d.bin'>, 'encoding': None}
+INFO:gensim.models.keyedvectors:duplicate words detected, shrinking matrix size from 2196017 to 2196016
+INFO:gensim.models.keyedvectors:loaded (2196016, 300) matrix from /home/iarroyof/data/glove/glove.840B.300d.bin
+INFO:gensim.models.keyedvectors:loading projection weights from /home/iarroyof/data/INEXQA2012corpus/w2igf_wikiEn_sub3_H300_w10_ol.bin
+DEBUG:smart_open.smart_open_lib:{'kw': {}, 'mode': 'rb', 'uri': '/home/iarroyof/data/INEXQA2012corpus/w2igf_wikiEn_sub3_H300_w10_ol.bin'}
+DEBUG:smart_open.smart_open_lib:encoding_wrapper: {'mode': 'rb', 'errors': 'strict', 'fileobj': <_io.BufferedReader name='/home/iarroyof/data/INEXQA2012corpus/w2igf_wikiEn_sub3_H300_w10_ol.bin'>, 'encoding': None}
+INFO:gensim.models.keyedvectors:duplicate words detected, shrinking matrix size from 22992 to 22976
+INFO:gensim.models.keyedvectors:loaded (22976, 300) matrix from /home/iarroyof/data/INEXQA2012corpus/w2igf_wikiEn_sub3_H300_w10_ol.bin
+INFO:root:Word vectors loaded...
+INFO:root:Loading queries...

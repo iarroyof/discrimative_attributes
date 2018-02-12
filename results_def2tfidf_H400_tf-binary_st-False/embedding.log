@@ -1,0 +1,13 @@
+DEBUG:root:Loading word vectors...
+DEBUG:gensim.models.doc2vec:Fast version of gensim.models.doc2vec is being used
+DEBUG:gensim.models.fasttext:Fast version of Fasttext is being used
+INFO:summa.preprocessing.cleaner:'pattern' package not found; tag filters are not available for English
+INFO:gensim.models.keyedvectors:loading projection weights from ../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin
+DEBUG:smart_open.smart_open_lib:{'mode': 'rb', 'uri': '../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin', 'kw': {}}
+DEBUG:smart_open.smart_open_lib:encoding_wrapper: {'errors': 'strict', 'fileobj': <_io.BufferedReader name='../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin'>, 'mode': 'rb', 'encoding': None}
+WARNING:gensim.models.keyedvectors:duplicate word 'close' in ../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin, ignoring all but first
+WARNING:gensim.models.keyedvectors:duplicate word 'sandals' in ../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin, ignoring all but first
+INFO:gensim.models.keyedvectors:duplicate words detected, shrinking matrix size from 3543 to 3541
+INFO:gensim.models.keyedvectors:loaded (3541, 400) matrix from ../../def2tfidf_grid/def2tfidf_griddef2tfidf_H400_tf-binary_st-False.bin
+INFO:root:Word vectors loaded...
+INFO:root:Loading queries...

@@ -1,0 +1,2 @@
+/almac/ignacio/word2lsa/nohup.out
+/almac/ignacio/nohup.out
