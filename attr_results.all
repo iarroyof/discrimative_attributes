@@ -23,6 +23,16 @@ Method	\lambda	\alpha	F1-score
 cone	0.0	None	0.506380874566
 arcone	0.0	None	0.492316591826
 arcone	0.1	None	0.481153902466
+results_def2vec_tfidf_MI
+Method	\lambda	\alpha	F1-score
+infocone	0.0	None	0.5104488657179014
+fuzzy	0.4	1.0	0.5031893152972706
+infocone	-0.7	None	0.5006429068507341
+results_def2vec_tfidf_MI_
+Method	\lambda	\alpha	F1-score
+fuzzy	0.4	1.0	0.5035906497211775
+fuzzy	0.7	1.0	0.502672607444788
+fuzzy	0.1	1.0	0.49500984401029835
 results_dsm_BNC_H500_w2
 Method	\lambda	\alpha	F1-score
 arcone	-0.4	None	0.5722413009153944
@@ -58,6 +68,16 @@ Method	\lambda	\alpha	F1-score
 arcone	-0.0	-None	0.5103465108936374
 cone	-0.0	-None	0.510063399957017
 arcone	--0.4	-None	0.48571606393596023
+results_glove_MI_840B.300d
+Method	\lambda	\alpha	F1-score
+infocone	0.4	None	0.4819763359429857
+infocone	0.1	None	0.47812953004442366
+sum	0.4	None	0.4579839623893386
+results_glove_MI_840B.300d_
+Method	\lambda	\alpha	F1-score
+infocone	0.4	None	0.4819763359429857
+infocone	0.1	None	0.47812953004442366
+sum	0.4	None	0.4579839623893386
 results_gove-w2igf-ol
 Method	\lambda	\alpha	F1-score
 sum	0.4	None	0.4579839623893386

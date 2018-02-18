@@ -2,7 +2,7 @@ import numpy as np
 
 # Piratiado: https://kaushikghose.wordpress.com/2013/10/24/computing-mutual-information-and-other-scary-things/
 
-def calc_MI(X,Y,bins, sparse=False):
+def calc_MI(X, Y, bins=100, sparse=False):
     if sparse:
         X = X.toarray()[0]
         Y = Y.toarray()[0]

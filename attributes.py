@@ -8,8 +8,8 @@ from sys import stderr
 import logging, argparse
 import itertools
 from scipy.sparse.linalg import norm as spnorm
+from mutual_inf import calc_MI as MI
 
-from pdb import set_trace as st
 
 def pmax(a, b):
     return np.max([a, b], axis=0)
@@ -216,12 +216,28 @@ def unsup_attributes(wa, wb, wq, s, i, method="cone", normalize=False, bin=True,
         bq = 1.0 if bq > 1.0 else np.arccos(bq) # Compute de difference arc b-q left hand side of the triangle inequality
         
         alpha = bq/ab
-        delta = -2*abs(alpha - cone) + 1.0
+        delta = -2 * abs(alpha - cone) + 1.0
 
         if bin:
         # It means that wa and wb are almost (th) antiparallel so they cannot 
         # produce a linear combination of them cancelling all possible attributes.
         #    return i, 0.0, s
+            if delta < th:
+                return i, 0.0, s
+
+            else:
+                return i, 1.0, s
+        else:
+            return i, delta, s
+
+
+    elif method == "infocone":
+        ab = MI(wa, wb, sparse=sparse) # The mutual information as a metric
+        qb = MI(wq, wb, sparse=sparse)
+        alpha = qb/ab
+        delta = -2 * abs(alpha - cone) + 1.0
+
+        if bin:
             if delta < th:
                 return i, 0.0, s
 
@@ -294,8 +310,8 @@ if __name__ == "__main__":
         par_dic = {"hybrid": [args.hybrid], "lamda": [args.th], "funct": [method]}
         ds = args.embeddings.strip('/').split('/')[-1] + "_"
     else:
-        par_dic = {"hybrid": [0.0, 0.1, 0.4, 0.7, 1.0], "lamda": [-1.0, -0.7, -0.4, 0.1, 0.0, 0.1, 0.4, 0.7, 1.0],
-                "funct": ["cone", "arcone", "fuzzy", "sum", "mean", "triang"]}
+        par_dic = {"hybrid": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 1.0], "lamda": [-1.0, -0.7, -0.4, 0.1, 0.0, 0.1, 0.4, 0.7, 1.0],
+                "funct": ["cone", "arcone", "fuzzy", "sum", "mean", "triang", "infocone"]}
         ds = ""
 
     #par_dic = {"hybrid": [0.0, 0.4], "lamda": [-0.4, 0.1],
