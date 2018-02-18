@@ -46,7 +46,7 @@ def save_sparse_bsr(filename, array):
 class vector_space(object):
     def __init__(self, directory):
         directory=os.path.normpath(directory) + '/'
-        self.words = {word.strip(".npz"): directory + word for word in os.listdir(directory)}
+        self.words = {word.replace(".npz", ''): directory + word for word in os.listdir(directory)}
 
     def __getitem__(self, item):
         return load_sparse_bsr(self.words[item])
